@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>sceneagb socials</title>
+
+<style>
+
+body{
+margin:0;
+font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto;
+background:#0b0b0b;
+color:white;
+}
+
+/* HEADER */
+
+header{
+position:relative;
+height:1050px;
+display:flex;
+justify-content:center;
+padding:20px;
+}
+
+header::before{
+content:"";
+position:absolute;
+inset:0;
+background:url("images/banner.gif") center/cover no-repeat;
+z-index:-1;
+}
+
+/* LOGO */
+
+.logo{
+position:absolute;
+left:30px;
+top:18px;
+font-size:26px;
+font-weight:600;
+color:black;
+}
+
+/* MENU */
+
+nav{
+position:absolute;
+top:20px;
+left:50%;
+transform:translateX(-50%);
+}
+
+nav a{
+margin:0 18px;
+text-decoration:none;
+color:black;
+font-weight:600;
+}
+
+/* SOCIAL SECTION */
+
+.container{
+max-width:900px;
+margin:auto;
+padding:60px 20px;
+}
+
+/* GRID */
+
+.grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:30px;
+}
+
+/* CARD */
+
+.card{
+border-radius:16px;
+overflow:hidden;
+background:rgba(255,255,255,0.1);
+backdrop-filter:blur(12px);
+text-decoration:none;
+color:white;
+display:flex;
+flex-direction:column;
+}
+
+/* IMAGE FILLS BOX */
+
+.card img{
+width:100%;
+height:100%;
+object-fit:cover;
+display:block;
+}
+
+/* BUTTON */
+
+.btn{
+padding:14px;
+background:black;
+text-align:center;
+}
+
+/* MOBILE */
+
+@media (max-width:768px){
+
+header{
+height:140px;
+}
+
+nav{
+right:20px;
+left:auto;
+transform:none;
+}
+
+.logo{
+left:20px;
+top:18px;
+font-size:18px;
+}
+
+/* COLUMN */
+
+.grid{
+grid-template-columns:1fr;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">sceneagb</div>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="socials.html">Socials</a>
+<a href="about.html">About</a>
+</nav>
+
+</header>
+
+<div class="container">
+
+<div class="grid">
+
+<a href="https://discord.gg/HdQSnmwqVz" target="_blank" class="card">
+<img src="images/discord.jpg">
+<div class="btn">Discord</div>
+</a>
+
+<a href="https://www.instagram.com/sceneagbpriv/" target="_blank" class="card">
+<img src="images/instagram.png">
+<div class="btn">Instagram</div>
+</a>
+
+<a href="https://www.tiktok.com/@sceneagb" target="_blank" class="card">
+<img src="images/tiktok.jpg">
+<div class="btn">TikTok</div>
+</a>
+
+</div>
+
+</div>
+
+</body>
+</html>
